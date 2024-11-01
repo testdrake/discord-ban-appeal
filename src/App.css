@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #ffffff; /* Changed to pure white for contrast */
+  color: #ffffff; /* Pure white for contrast */
 }
 
 .textarea {
@@ -27,6 +27,7 @@
   transition: border-color .2s ease-in-out, background .2s ease-in-out;
   resize: none;
   margin: 15px 0 !important;
+  border-radius: 4px; /* Rounded corners for textarea */
 }
 
 .MuiOutlinedInput-input,
@@ -37,7 +38,7 @@
 body {
   background: #121212; /* Dark theme for the body */
   font-family: 'Fira Sans', sans-serif;
-  color: #ffffff; /* Use pure white for text */
+  color: #ffffff; /* Pure white for text */
   text-align: center;
 }
 
@@ -64,11 +65,12 @@ label {
   border: none;
   border-radius: 5px; /* Rounded corners */
   padding: 10px;
-  transition: background-color .3s ease;
+  transition: background-color .3s ease, transform .2s ease; /* Added transform transition */
 }
 
 .button:hover {
   background-color: #4752c4 !important; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect */
 }
 
 button {
@@ -78,11 +80,12 @@ button {
   border-radius: 5px;
   padding: 10px;
   color: white !important;
-  transition: background-color .3s ease;
+  transition: background-color .3s ease, transform .2s ease; /* Added transform transition */
 }
 
 button:hover {
   background-color: #4752c4 !important; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect */
 }
 
 form button {
@@ -92,11 +95,12 @@ form button {
   border: none;
   border-radius: 5px;
   padding: 5px;
-  transition: background-color .3s ease;
+  transition: background-color .3s ease, transform .2s ease; /* Added transform transition */
 }
 
 form button:hover {
   background-color: #4752c4 !important; /* Darker blue on hover */
+  transform: translateY(-1px); /* Lift effect */
 }
 
 .background {
@@ -121,4 +125,5 @@ form button:hover {
 h1 {
   width: 100%;
   color: #5865F2; /* Blue header */
+  margin-bottom: 1em; /* Space below header */
 }
